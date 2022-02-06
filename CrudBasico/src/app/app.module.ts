@@ -7,7 +7,7 @@ import { InicioComponent } from './COMPONENTES/inicio/inicio.component';
 import { AgregarComponent } from './COMPONENTES/agregar/agregar.component';
 import { ModificarComponent } from './COMPONENTES/modificar/modificar.component';
 
-import {HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from "@angular/common/http";
 import {FormsModule} from '@angular/forms';
 
 
@@ -29,4 +29,6 @@ import {FormsModule} from '@angular/forms';
   providers: [],
   bootstrap: [AppComponent]
 })
+
+
 export class AppModule { }
