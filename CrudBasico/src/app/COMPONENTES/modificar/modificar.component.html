@@ -1,1 +1,31 @@
-<p>modificar works!</p>
+<p>Modificar Equipo</p>
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-6">
+			<form>
+				<div class="mb-3">
+					<label class="form-label">Nombre del equipo</label>
+					<input [(ngModel)]="equipo.nombre" type="text" name="nombre" class="form-control">
+				</div>
+
+				<div class="mb-3">
+					<label class="form-label">Logo del equipo</label>
+					<input [(ngModel)]="equipo.logo" type="text" name="logo" class="form-control">
+				</div>
+				<button (click)="modificar()" class="btn btn-primary">Guardar</button>
+			</form>
+		</div>
+		<div class="col-sm-6">
+			<form>
+				<div class="mb-3">
+					<img src="{{equipo.logo}}" width="100" height="100" alt="">					
+				</div>
+
+				<div class="mb-3">
+					<label class="form-label">{{equipo.nombre}}</label>
+				</div>
+			</form>
+		</div>
+	</div>	
+</div>

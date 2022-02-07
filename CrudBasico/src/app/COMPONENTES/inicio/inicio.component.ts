@@ -33,9 +33,9 @@ export class InicioComponent implements OnInit {
     this.EquipoService.deleteEquipo(id).subscribe(
       res=>{
         console.log('equipo eliminado');
-        this.listarEquipo();        
-      },
-      err=>console.log(err)
+        this.listarEquipo();
+    },
+    err=> console.log(err)
     );
   }
 
